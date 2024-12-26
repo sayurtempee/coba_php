@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/login\.php$
+RewriteRule ^.*$ /login.php [R=302,L]
