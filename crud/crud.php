@@ -95,7 +95,7 @@ $result = $conn->query($sql_get);
 <head>
    <link rel="stylesheet" href="../asset/crud-style.css">
    <link rel="icon" type="image/svg+xml" href="../img/akatsuki.png">
-   <title>Tambah, Edit, Hapus Data Siswa</title>
+   <title>Data Nilai Siswa RPL</title>
    <script>
       function resetForm() {
          // Kosongkan semua input form
@@ -114,7 +114,7 @@ $result = $conn->query($sql_get);
       <input type="submit" name="logout" value="Logout">
    </form>
 
-   <h2>Tambah Data Siswa</h2>
+   <h2>Nilai Siswa RPL</h2>
    <form method="POST" action="crud.php">
       <input type="hidden" name="id" id="id">
       <label for="nama">Nama:</label><br>
@@ -132,12 +132,12 @@ $result = $conn->query($sql_get);
       <label for="no_hp">No HP:</label><br>
       <input type="text" id="no_hp" name="no_hp" required><br><br>
 
-      <input type="submit" name="tambah" value="Tambah" style="color: green;">
-      <input type="submit" name="update" value="Update" style="color: blue;">
-      <input type="button" value="Reset" onclick="resetForm()" style="color: red;">
+      <input type="submit" name="tambah" value="Tambah" style="color: white;">
+      <input type="submit" name="update" value="Update" style="color: white;">
+      <input type="button" value="Reset" onclick="resetForm()" style="color: white;">
    </form>
 
-   <h2>Daftar Data Siswa</h2>
+   <h2>Daftar Nilai Siswa RPL</h2>
    <table border="1" cellpadding="10" cellspacing="0">
       <thead>
          <tr>
