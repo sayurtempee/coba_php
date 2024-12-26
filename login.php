@@ -4,6 +4,13 @@ error_reporting(E_ALL);
 
 include "connection.php";
 
+session_start();
+// Cek apakah user sudah login
+if (!isset($_SESSION['user_logged_in'])) {
+   header("Location: login.php");
+   exit();
+}
+
 // Cek koneksi database
 if (!$conn) {
    die("Connection failed: " . mysqli_connect_error());
