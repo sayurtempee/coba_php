@@ -4,6 +4,8 @@ error_reporting(E_ALL);
 
 include "connection.php";
 
+session_start();
+
 // Cek koneksi database
 if (!$conn) {
    die("Connection failed: " . mysqli_connect_error());
