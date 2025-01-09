@@ -3,8 +3,10 @@
 error_reporting(E_ALL);
 
 include "connection.php";
-
 session_start();
+if (isset($_SESSION['login'])) {
+   header('../crud/crud.php');
+}
 
 // Cek koneksi database
 if (!$conn) {

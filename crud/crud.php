@@ -92,7 +92,9 @@ $result = $conn->query($sql_get);
 
 <!DOCTYPE html>
 <html>
+
 <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="../asset/crud-style.css">
    <link rel="icon" type="image/svg+xml" href="../img/akatsuki.png">
    <title>Data Nilai Siswa RPL</title>
@@ -155,17 +157,17 @@ $result = $conn->query($sql_get);
          if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                echo "<tr>
-                  <td>" . $row['id'] . "</td>
-                  <td>" . $row['nama'] . "</td>
-                  <td>" . $row['kelas'] . "</td>
-                  <td>" . $row['nilai'] . "</td>
-                  <td>" . $row['alamat'] . "</td>
-                  <td>" . $row['no_hp'] . "</td>
-                  <td>
-                     <a href='crud.php?edit=" . $row['id'] . "'>Edit</a> | 
-                     <a href='crud.php?delete=" . $row['id'] . "' onclick='return confirm(\"Yakin ingin menghapus data ini?\")'>Delete</a>
-                  </td>
-               </tr>";
+            <td data-label='ID'>" . $row['id'] . "</td>
+            <td data-label='Nama'>" . $row['nama'] . "</td>
+            <td data-label='Kelas'>" . $row['kelas'] . "</td>
+            <td data-label='Nilai'>" . $row['nilai'] . "</td>
+            <td data-label='Alamat'>" . $row['alamat'] . "</td>
+            <td data-label='No HP'>" . $row['no_hp'] . "</td>
+            <td data-label='Aksi'>
+               <a href='crud.php?edit=" . $row['id'] . "'>Edit</a> | 
+               <a href='crud.php?delete=" . $row['id'] . "' onclick='return confirm(\"Yakin ingin menghapus data ini?\")'>Delete</a>
+            </td>
+         </tr>";
             }
          } else {
             echo "<tr><td colspan='7'>Tidak ada data!!!</td></tr>";
@@ -197,4 +199,5 @@ $result = $conn->query($sql_get);
    }
    ?>
 </body>
+
 </html>
