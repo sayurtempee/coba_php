@@ -1,9 +1,11 @@
+/* Global Body Styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #007bff, #6c63ff);
   animation: fadeIn 1s ease-in-out;
+  color: #333;
 }
 
 @keyframes fadeIn {
@@ -11,15 +13,17 @@ body {
   100% { opacity: 1; }
 }
 
+/* Form Container Styling */
 form {
   width: 90%;
   max-width: 480px;
   margin: 20px auto;
-  padding: 15px;
+  padding: 20px;
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   animation: slideIn 0.5s ease-out;
+  box-sizing: border-box;
 }
 
 @keyframes slideIn {
@@ -27,6 +31,7 @@ form {
   to { transform: translateY(0); opacity: 1; }
 }
 
+/* Input and Textarea Styling */
 input, textarea {
   width: 100%;
   margin-bottom: 15px;
@@ -35,10 +40,11 @@ input, textarea {
   border-radius: 4px;
   font-size: 1rem;
   box-sizing: border-box;
+  transition: border-color 0.3s ease;
 }
 
+/* Submit and Button Styling */
 input[type="submit"], input[type="button"] {
-  width: auto;
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -53,6 +59,7 @@ input[type="submit"]:hover, input[type="button"]:hover {
   background-color: #0056b3;
 }
 
+/* Heading Styling */
 h2 {
   text-align: center;
   margin-top: 20px;
@@ -60,12 +67,13 @@ h2 {
   color: #fff;
 }
 
+/* Table Styling */
 table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px auto;
-  overflow-x: auto;
   animation: fadeIn 0.5s ease-in-out;
+  overflow-x: auto;
 }
 
 table, th, td {
@@ -88,6 +96,7 @@ td {
   background-color: #f9f9f9;
 }
 
+/* Link Styling */
 a {
   color: #007bff;
   text-decoration: none;
@@ -98,6 +107,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Logout Button Styling */
 .logout-btn {
   display: block;
   margin: 30px auto;
@@ -117,11 +127,15 @@ a:hover {
   background-color: #c82333;
 }
 
-/* Responsif */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   form {
     width: 95%;
-    padding: 10px;
+    padding: 15px;
+  }
+
+  input, textarea {
+    font-size: 0.95rem;
   }
 
   table {
@@ -138,10 +152,29 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  input, textarea {
+    font-size: 1rem;
+  }
+
+  /* Table Responsive */
   table, th, td {
     display: block;
     width: 100%;
     text-align: left;
+    margin-bottom: 10px;
   }
 
   thead {
