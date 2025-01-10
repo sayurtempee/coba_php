@@ -4,8 +4,14 @@ error_reporting(E_ALL);
 
 // Database connection
 $user = "root";
-$pw = "mii123";
+$pw = "";
 $db = "coba";
 $host = "localhost";
 $conn = mysqli_connect($host, $user, $pw, $db);
+// untuk tes connection
+if ($conn){
+echo 'connect';
+} else {
+echo 'no connect';
+}
 ?>
