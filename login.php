@@ -68,7 +68,7 @@ mysqli_close($conn);
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./asset/style.css">
-   <link rel="icon" type="image/svg+xml" href="./img/akatsuki.png">
+   <link rel="shortcut icon" href="./img/logo71.png" type="image/x-icon">
    <title>Login</title>
 </head>
 
@@ -86,8 +86,8 @@ mysqli_close($conn);
          </label>
       </p>
       <input type="submit" name="submit" value="Login">
-      <input type="submit" value="tidak punya user" onclick="window.location.href='signup.php'" style="color: red;">
       <input type="submit" value="lupa Password!!" onclick="window.location.href='forgotPassword.php'" style="color: blue;">
+      <input type="submit" value="back" onclick="window.location.href='index.html'">
       <!-- <a href="signup.php">Silahkan SIGN UP</a> -->
       <!-- <a href="forgotPassword.php">Lupa Password!!</a> -->
    </form>

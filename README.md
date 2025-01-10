@@ -4,6 +4,10 @@ COBA_PHP :
 - Bootstrap 5.*
 - MySQL/MariaDB
 
-untuk databases  nya ada di asset ya bang :D
+note :
+- import Database nya di /asset/databases/coba.sql 
+- untuk nama db nya coba
+- email    : user@gmail.com
+- username : user
+- password : 123
 
-Baru belajar bang

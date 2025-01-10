@@ -96,7 +96,7 @@ $result = $conn->query($sql_get);
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="../asset/crud-style.css">
-   <link rel="icon" type="image/svg+xml" href="../img/akatsuki.png">
+   <link rel="shortcut icon" href="../img/logo71.png" type="image/x-icon">
    <title>Data Nilai Siswa RPL</title>
    <script>
       function resetForm() {
